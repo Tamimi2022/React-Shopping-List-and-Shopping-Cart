@@ -28,7 +28,7 @@ class List extends React.Component {
                                 <ListItem 
                                 key={item.id} 
                                 item={item} 
-                                clickItem={() => this.onItemClick(item)} 
+                                clickItem={() => this.props.onItemClick(item)} 
                                 showQuantities={this.props.showQuantities} />
                         ))}
                     </ul>
